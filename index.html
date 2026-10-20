@@ -24,7 +24,7 @@
 <link rel="preload" href="assets/fonts/golos-text-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/styles.css?v=8b277aad">
+<link rel="stylesheet" href="assets/styles.css?v=0c066179">
 <script>
 (function(d){d.classList.add("js");try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){d.classList.add("js-anim");if(d.dataset.page==="home"&&!sessionStorage.getItem("um2-intro"))d.classList.add("js-intro")}}catch(e){}
 setTimeout(function(){if(!window.__umReady){d.classList.remove("js-anim","js-intro");d.classList.add("mb-ready")}},4000)})(document.documentElement);
@@ -418,10 +418,10 @@ window.umLogo=function(i){var f=i.getAttribute("data-fb");if(f){i.removeAttribut
   <h2 id="m-book-t" tabindex="-1">Запишитесь на бесплатную консультацию</h2><p class="modal__sub">Перезвоним, подберём врача и удобное время.</p>
   <p class="modal__doc" hidden></p><p class="modal__promo" hidden></p>
   <form class="form lead" data-lead="book" method="post" action="#">
-    <input type="hidden" name="doctor"><input type="hidden" name="promo"><label>Имя<input name="name" autocomplete="given-name" required></label><label>Телефон<input name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+7 ___ ___-__-__"></label>
+    <input type="hidden" name="doctor"><input type="hidden" name="promo"><label>Телефон<input name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="+7 ___ ___-__-__"></label><label>Имя<input name="name" autocomplete="given-name" required></label>
     <fieldset class="reasons"><legend>Что беспокоит <span>необязательно</span></legend><div class="chips"><label class="chip chip--pick"><input type="radio" name="reason" value="Болит зуб"><span>Болит зуб</span></label><label class="chip chip--pick"><input type="radio" name="reason" value="Ребёнок"><span>Ребёнок</span></label><label class="chip chip--pick"><input type="radio" name="reason" value="Прикус"><span>Прикус</span></label><label class="chip chip--pick"><input type="radio" name="reason" value="Нужен имплант"><span>Нужен имплант</span></label><label class="chip chip--pick"><input type="radio" name="reason" value="Коронка или протез"><span>Коронка или протез</span></label><label class="chip chip--pick"><input type="radio" name="reason" value="Чистка"><span>Чистка</span></label><label class="chip chip--pick"><input type="radio" name="reason" value="Другое"><span>Другое</span></label></div></fieldset>
     <label class="consent"><input type="checkbox" name="consent" required><span>Даю <span>согласие на обработку персональных данных</span> и принимаю <span>Политику конфиденциальности</span></span></label>
-    <button class="btn btn--lg btn--wide">Жду звонка</button>
+    <div class="modal__send"><button class="btn btn--lg btn--wide">Жду звонка</button><a class="modal__tel" href="tel:+79037977688">или позвоните: +7 903 797-76-88</a></div>
     <p class="modal__note">Перезвоним в часы работы. Заявки после 21:00 перезваниваем с 9:00 утра. </p>
   </form>
 </div></div>
