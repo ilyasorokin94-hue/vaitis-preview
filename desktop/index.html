@@ -8,8 +8,8 @@
 <style>
   /* компьютерная версия на телефоне: страница с вариантами в окне 1440×900, уменьшенном под экран */
   html, body { margin: 0; height: 100%; background: #1e3f63; overflow: hidden; font: 500 14px/1.3 system-ui, sans-serif; color: #fff; }
-  .stage { position: fixed; inset: 0; display: grid; place-items: center; }
-  .frame { width: 1440px; height: 900px; border: 0; background: #fff; transform-origin: 50% 50%; box-shadow: 0 20px 60px rgba(0, 0, 0, .35); }
+  .stage { position: fixed; inset: 0; }
+  .frame { width: 1440px; height: 900px; border: 0; background: #fff; position: absolute; left: 50%; top: 50%; transform-origin: 50% 50%; box-shadow: 0 20px 60px rgba(0, 0, 0, .35); }
   .hint { position: fixed; left: 0; right: 0; bottom: max(16px, env(safe-area-inset-bottom)); text-align: center; opacity: .85; padding: 0 16px; }
   @media (orientation: landscape) { .hint { display: none; } }
 </style>
@@ -19,7 +19,7 @@
 <p class="hint">Поверните телефон горизонтально: так окно компьютерной версии будет крупнее</p>
 <script>
   const f = document.querySelector(".frame");
-  const fit = () => { const s = Math.min(innerWidth / 1440, innerHeight / 900); f.style.transform = `scale(${s})`; };
+  const fit = () => { const s = Math.min(innerWidth / 1440, innerHeight / 900); f.style.transform = `translate(-50%, -50%) scale(${s})`; };
   fit(); addEventListener("resize", fit);
 </script>
 </body>
