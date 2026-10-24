@@ -24,7 +24,7 @@
 <link rel="preload" href="assets/fonts/golos-text-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/styles.css?v=cb4b228e">
+<link rel="stylesheet" href="assets/styles.css?v=6c424329">
 <script>
 (function(d){d.classList.add("js");try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches){d.classList.add("js-anim");if(d.dataset.page==="home"&&!sessionStorage.getItem("um2-intro"))d.classList.add("js-intro")}}catch(e){}
 setTimeout(function(){if(!window.__umReady){d.classList.remove("js-anim","js-intro");d.classList.add("mb-ready")}},4000)})(document.documentElement);
@@ -58,7 +58,7 @@ window.umLogo=function(i){var f=i.getAttribute("data-fb");if(f){i.removeAttribut
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Меню" data-lenis-prevent>
   <div class="menu__top"><a class="logo logo--white" href="./"><picture><source media="(max-width: 760px) and (forced-colors: none)" srcset="images/brand/header-logo-ink.svg"><img class="logo__img" src="images/brand/header-logo.svg" alt="" width="184" height="48" referrerpolicy="no-referrer" onerror="umLogo(this)"></picture><span class="logo__text">Вайтис<small>стоматология в Одинцово</small></span><span class="logo__unit">Стоматология</span></a><button class="menu__close" type="button" aria-label="Закрыть меню"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.7 12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7l-1.4-1.4L9.2 12 2.9 5.7l1.4-1.4 6.3 6.3 6.3-6.3z"/></svg></button></div>
   <nav aria-label="Разделы">
-    <details class="menu__svc"><summary>Услуги</summary><div class="menu__list"><a href="#services">Имплантация</a><a href="#services">Лечение зубов</a><a href="#services">Детям</a><a href="#services">Прикус</a><a href="#services">Протезирование</a><a href="#services">Гигиена и отбеливание</a><a href="#services">Эстетика</a><a href="#services">Хирургия</a><a href="#services">Снимки и КТ</a></div></details>
+    <details class="menu__svc"><summary>Услуги</summary><div class="menu__list"><a href="#services">Имплантация</a><a href="#services">Лечение зубов</a><a href="#services">Детям</a><a href="#services">Прикус</a><a href="#services">Протезирование</a><a href="#services">Гигиена и отбеливание</a><a href="#services">Эстетика</a><a href="#services">Хирургия</a><a href="#services">Рентген и КТ</a></div></details>
     <a href="#akcii">Цены</a><a href="#akcii">Акции</a><a href="#team">Врачи</a><a href="#clinic">О клинике</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
   </nav>
   <div class="menu__foot"><a class="footer__phone" href="tel:+79037977688">+7 903 797-76-88</a><span class="note">Ежедневно с 9:00 до 21:00. Перезвоним в часы работы.</span><a class="btn btn--wide btn--lg" href="#" data-modal="book">Записаться</a></div>
@@ -128,32 +128,31 @@ window.umLogo=function(i){var f=i.getAttribute("data-fb");if(f){i.removeAttribut
   <div class="svl__head"><div class="wrap"><h2 id="sv-title" data-split>Услуги</h2><a class="link" href="#akcii">Весь прайс</a></div></div>
   <div class="svl__top"><div class="wrap"><div class="svl-grid" data-svl>
     <a class="svl-card" href="#services" style="--delay:0.0s">
-      <img src="images/uslugi/implantaciya.webp" srcset="images/uslugi/implantaciya-480w.webp 480w, images/uslugi/implantaciya-828w.webp 828w, images/uslugi/implantaciya-1200w.webp 1200w, images/uslugi/implantaciya.webp 1536w" sizes="auto, 100vw" data-fb="images/svc/implantaciya.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="umImg(this)" class="svl-card__img">
-      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Имплантация зубов</h3></span>
+      <img src="images/uslugi/implantaciya.webp" srcset="images/uslugi/implantaciya-480w.webp 480w, images/uslugi/implantaciya-828w.webp 828w, images/uslugi/implantaciya-1200w.webp 1200w, images/uslugi/implantaciya.webp 1536w" sizes="auto, 100vw" data-fb="images/svc/implantaciya.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="umImg(this)" class="svl-card__img" style="object-position:50% 34%">
+      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Имплантация зубов</h3><span class="svl-card__sub"><span>Имплантация от 41 000 ₽</span><span>Коронка на имплант от 36 000 ₽</span><span>Синус-лифтинг от 25 000 ₽</span></span></span>
     </a>
     <a class="svl-card" href="#services" style="--delay:0.3s">
       <img src="images/uslugi/lechenie-zubov.webp" srcset="images/uslugi/lechenie-zubov-480w.webp 480w, images/uslugi/lechenie-zubov-828w.webp 828w, images/uslugi/lechenie-zubov-1200w.webp 1200w, images/uslugi/lechenie-zubov.webp 1536w" sizes="auto, 100vw" data-fb="images/gen/microscope.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="umImg(this)" class="svl-card__img">
-      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Лечение зубов</h3></span>
+      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Лечение зубов</h3><span class="svl-card__sub"><span>Кариес от 6 900 ₽</span><span>Каналы от 5 800 ₽</span><span>Микроскоп 3 000 ₽</span></span></span>
     </a>
     <a class="svl-card" href="#services" style="--delay:0.6s">
       <img src="images/uslugi/detskaya.webp" srcset="images/uslugi/detskaya-480w.webp 480w, images/uslugi/detskaya-828w.webp 828w, images/uslugi/detskaya-1200w.webp 1200w, images/uslugi/detskaya.webp 1536w" sizes="auto, 100vw" data-fb="images/clinic/kids-cabinet.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="umImg(this)" class="svl-card__img">
-      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Детская стоматология</h3></span>
+      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Детская стоматология</h3><span class="svl-card__sub"><span>Молочный зуб от 3 800 ₽</span><span>Герметизация фиссур 3 200 ₽</span><span>Детская гигиена от 3 500 ₽</span></span></span>
     </a>
     <a class="svl-card" href="#services" style="--delay:0.9s">
       <img src="images/uslugi/ortodontiya.webp" srcset="images/uslugi/ortodontiya-480w.webp 480w, images/uslugi/ortodontiya-828w.webp 828w, images/uslugi/ortodontiya-1200w.webp 1200w, images/uslugi/ortodontiya.webp 1536w" sizes="auto, 100vw" data-fb="images/clinic/brekety-model.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="umImg(this)" class="svl-card__img">
-      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Исправление прикуса</h3></span>
+      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Исправление прикуса</h3><span class="svl-card__sub"><span>Пластинка от 22 000 ₽</span><span>Брекеты 38 000 ₽ за челюсть</span><span>Элайнеры от 120 000 ₽</span></span></span>
     </a>
     <a class="svl-card" href="#services" style="--delay:1.2s">
       <img src="images/uslugi/protezirovanie.webp" srcset="images/uslugi/protezirovanie-480w.webp 480w, images/uslugi/protezirovanie-828w.webp 828w, images/uslugi/protezirovanie-1200w.webp 1200w, images/uslugi/protezirovanie.webp 1536w" sizes="auto, 100vw" data-fb="images/svc/protezirovanie.webp" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="umImg(this)" class="svl-card__img">
-      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Коронки и протезы</h3></span>
+      <span class="svl-card__in"><span class="svl-card__top"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span><h3 class="svl-card__title">Коронки и протезы</h3><span class="svl-card__sub"><span>Циркониевая коронка от 28 000 ₽</span><span>Съёмный протез от 38 000 ₽</span><span>Бюгельный протез от 64 000 ₽</span></span></span>
     </a>
   </div></div></div>
   <div class="svl__bottom"><div class="wrap"><div class="svl-list" data-svl>
-    <a class="svl-row svl-row--urgent" href="#" data-modal="book" data-reason="Болит зуб" style="--delay:0.0s"><h3 class="svl-row__title">Болит зуб? Запишем на ближайшее время</h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
-    <a class="svl-row" href="#services" style="--delay:0.3s"><h3 class="svl-row__title">Гигиена и отбеливание</h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
-    <a class="svl-row" href="#services" style="--delay:0.6s"><h3 class="svl-row__title">Виниры и реставрация</h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
-    <a class="svl-row" href="#services" style="--delay:0.9s"><h3 class="svl-row__title">Хирургия и удаление зубов</h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
-    <a class="svl-row" href="#services" style="--delay:1.2s"><h3 class="svl-row__title">Снимки и КТ</h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
+    <a class="svl-row" href="#services" style="--delay:0.0s"><h3 class="svl-row__title">Профессиональная гигиена и отбеливание <small class="sp-links__price">от 8 000 ₽</small></h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
+    <a class="svl-row" href="#services" style="--delay:0.3s"><h3 class="svl-row__title">Виниры и реставрация <small class="sp-links__price">от 13 000 ₽</small></h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
+    <a class="svl-row" href="#services" style="--delay:0.6s"><h3 class="svl-row__title">Удаление зубов и хирургия <small class="sp-links__price">от 4 000 ₽</small></h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
+    <a class="svl-row" href="#services" style="--delay:0.9s"><h3 class="svl-row__title">Рентген и КТ <small class="sp-links__price">от 500 ₽</small></h3><span class="svl-row__act"><span class="svl-go" aria-hidden="true"><svg viewBox="0 0 60 60"><path d="M24 36 36 24M27 24h9v9"/></svg></span></span></a>
   </div></div></div>
 </div>
 </section>
@@ -380,7 +379,7 @@ window.umLogo=function(i){var f=i.getAttribute("data-fb");if(f){i.removeAttribut
       </div>
       <nav class="fstage__group" aria-label="Услуги">
         <h3>Услуги</h3>
-        <p class="fstage__list fstage__list--2"><a href="#services">Имплантация</a><a href="#services">Лечение зубов</a><a href="#services">Детям</a><a href="#services">Прикус</a><a href="#services">Протезирование</a><a href="#services">Гигиена и отбеливание</a><a href="#services">Эстетика</a><a href="#services">Хирургия</a><a href="#services">Снимки и КТ</a></p>
+        <p class="fstage__list fstage__list--2"><a href="#services">Имплантация</a><a href="#services">Лечение зубов</a><a href="#services">Детям</a><a href="#services">Прикус</a><a href="#services">Протезирование</a><a href="#services">Гигиена и отбеливание</a><a href="#services">Эстетика</a><a href="#services">Хирургия</a><a href="#services">Рентген и КТ</a></p>
       </nav>
       <nav class="fstage__group" aria-label="Клиника">
         <h3>Клиника</h3>
