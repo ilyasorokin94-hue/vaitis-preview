@@ -49,7 +49,7 @@ RewriteRule ^vrachi\.html$ https://%{HTTP_HOST}/vrachi/ [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+((?:[^?\s]*/)?)index\.html[?\s]
 RewriteRule ^ https://%{HTTP_HOST}/%1 [R=301,L,NE]
 RewriteCond %{THE_REQUEST} \s/+([^?\s]+?)\.html[?\s]
-RewriteCond %1 !^404$
+RewriteCond %1 !^(404|yandex_[0-9a-f]+|google[0-9a-f]+)$
 RewriteRule ^ https://%{HTTP_HOST}/%1 [R=301,L,NE]
 # /ceny → /ceny/ сразу на https (mod_dir сам отправил бы на http за прокси)
 RewriteCond %{REQUEST_FILENAME} -d
